@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.image {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #101010;
+}
+
+.image.start {
+    background-image: url('./start_image.jpg');
+}
+
+.image.cave {
+    background-image: url('./cave.jpg');
+}
+
+.image.harbor {
+    background-image: url('./harbor.jpg');
+}
+
+.image.city {
+    background-image: url('./city.jpg');
+}
+
+.image.hotel {
+    background-image: url('./hotel.jpg');
+}
+
+.image.city-night {
+    background-image: url('./city-night.jpg');
+}
+
+.image > .close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: white;
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+
+.click-area {
+    background-color: transparent;
+    position: absolute;
+}
+
+.state {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 3px black;
+}
+
+.greeting {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100vw;
+    color: white;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+    text-align: center;
+    font-weight: bold;
+}
