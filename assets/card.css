@@ -58,6 +58,7 @@ body {
     position: absolute;
     top: 1rem;
     left: 0;
+    width: 100vw;
     color: white;
     font-family: sans-serif;
     text-shadow: 1px 1px 3px black;
