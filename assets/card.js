@@ -48,10 +48,6 @@ function addTogether(a, b) {
     return a + b;
 }
 
-function returnOne() {
-    return 1;
-}
-
 function State(stateElement) {
     const self = this;
     const state = {
@@ -61,7 +57,7 @@ function State(stateElement) {
         hotel: 0,
         'city-night': 0,
     };
-    const max = Object.values(state).map(returnOne).reduce(addTogether);
+    const maxScore = Object.values(state).length;
 
     self.update = (target) => {
         if (typeof target === 'string') {
@@ -80,8 +76,8 @@ function State(stateElement) {
             }
         }
 
-        const num = Object.values(state).reduce(addTogether);
-        stateElement.innerHTML = `Du hast ${num} von ${max} Bildern gefunden.`;
+        const currentScore = Object.values(state).reduce(addTogether);
+        stateElement.innerHTML = `Du hast ${currentScore} von ${maxScore} Bildern gefunden.`;
     };
 
     self.update();
